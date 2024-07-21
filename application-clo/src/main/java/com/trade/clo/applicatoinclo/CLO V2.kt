@@ -136,14 +136,7 @@ internal class MyWebViewClient() : WebViewClient() {
     ) {
         super.onReceivedError(view, request, error)
     }
-    //Important part
-    override fun onReceivedSslError(
-        view: WebView?,
-        handler: SslErrorHandler?,
-        error: SslError?
-    ) {
-        handler?.proceed()
-    }
+
 }
 
 
